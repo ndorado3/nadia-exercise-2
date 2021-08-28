@@ -1,0 +1,20 @@
+h1,
+h2,
+h3,
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnPlay {
+  width: 200px;
+  height: 100px;
+  font-size: 12pt;
+}
+
+.btnPlay:hover {
+  background-color: aqua;
+  border: 1px solid rgb(0, 72, 255);
+}
