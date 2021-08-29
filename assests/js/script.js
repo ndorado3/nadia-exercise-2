@@ -3,34 +3,35 @@ var number = document.getElementById("number");
 var lostModal = document.getElementById("lostModal");
 var spanObject = document.getElementsByClassName("close")[0];
 var okBtn = document.getElementById("okBtn");
-// function
 
+//collapses the modal by clicking the x
 spanObject.onclick = function () {
   lostModal.style.display = "none";
 };
 
+//collapses the modal by clicking the OK btn
 okBtn.onclick = function () {
   lostModal.style.display = "none";
 };
 
+//it hide the modal before the Play btn is click
 lostModal.style.display = "none";
 
 function radomNumber() {
-  //   var numbers = [];
   for (var i = 0; i < 30; i++) {
     var numbers = Math.floor(Math.random() * 15000);
     number.innerHTML = "<h3> Your number: " + numbers + "</h3>";
   }
-  //   return number;
+  //   if (numbers < 1 || numbers > 1000) alert("Too bad! You've lost!");
   if (numbers < 1 || numbers > 1000) lostModal.style.display = "block";
   else {
     lostModal.style.display = "none";
   }
-
-  //   if (numbers < 1 || numbers > 1000) alert("Too bad! You've lost!");
 }
 
 playBtn.addEventListener("click", radomNumber);
+
+
 
 // if (numbers < 1 || numbers > 1000) alert("Too bad! You've lost!");
 
