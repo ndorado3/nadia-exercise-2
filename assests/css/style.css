@@ -15,6 +15,6 @@ div {
 }
 
 .btnPlay:hover {
-  background-color: aqua;
+  background-color: rgba(95, 205, 245, 0.926);
   border: 1px solid rgb(0, 72, 255);
 }
